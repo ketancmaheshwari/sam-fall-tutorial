@@ -1,6 +1,7 @@
 %\PassOptionsToPackage{gray}{xcolor}
 \documentclass[hyperref={pdfpagelabels=false},12pt]{beamer}
 \setbeamertemplate{frametitle}[default][center]
+\usefonttheme{professionalfonts}
 \mode<presentation>
 {
  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
@@ -9,7 +10,7 @@
  \setbeamertemplate{navigation symbols}{}
  \setbeamertemplate{caption}[numbered]
 } 
-
+\newcommand{\cmd}[1] {\textbf{\texttt{\$ #1}}}
 \usepackage[utf8]{inputenc}
 %\usepackage{multirow}
 %\usepackage{wasysym}
@@ -38,88 +39,82 @@
 
 \begin{frame}
 \frametitle{Getting Started: Know your machine!}
-\centering
+
 
 \end{frame}
 
 \begin{frame}
 \frametitle{How it all clicked!: A Brief History}
-\centering
+
 1970-\\
 1980-\\
 1990-\\
 2000-\\
 2010-\\
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Understanding the Unix Command: Locate commands; internal vs. external}
-\centering
-\texttt{\$ apropos}\\ 
-\texttt{\$ locate}
+\cmd{apropos}\\
+\cmd{locate}
 \end{frame}
 
 \begin{frame}
 \frametitle{General-purpose utilities: date, who, uname, echo, passwd, bc, man, time}
-\centering
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Navigate the Filesystem}
-\centering
-cd, pwd, mkdir, find, df, du
+\frametitle{Navigate the Filesystem: cd, pwd, mkdir, find, df, du}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{Handle Files}
-\centering
-less, more, cat, ls, wc, chmod, chown, umask, tar, gzip, gunzip
-\end{frame}
+\frametitle{Handle Files: less, more, cat, ls, wc, chmod, chown, umask, tar, gzip, gunzip}
 
-\begin{frame}
-\frametitle{The Shell}
-\end{frame}
-
-\begin{frame}
-\frametitle{The Environment}
-\centering
-aliases, ps, export, history, PS1, 
-\end{frame}
-
-\begin{frame}
-\frametitle{Simple Filters}
-\centering
-head, tail, sort, column, uniq, tr, cut, paste 
-\end{frame}
-
-\begin{frame}
-\frametitle{More filters}
-\centering
-awk, sed, grep
 \end{frame}
 
 \begin{frame}
 \frametitle{The Shell}
-\centering
+\end{frame}
+
+\begin{frame}
+\frametitle{The Environment: aliases, ps, export, history, PS1}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simple Filters: head, tail, sort, column, uniq, tr, cut, paste}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{More filters: awk, sed, grep}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Shell}
+
 wildcards, escaping and quoting, pipe and redirection, tee, variables
 \end{frame}
 
 \begin{frame}
-\frametitle{Remote Connectivity and Networks}
-\centering
-ssh, scp, rsync, ftp, curl
+\frametitle{Remote Connectivity and Networks: ssh, scp, rsync, ftp, curl}
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Useful keyboard shortcuts}
-\centering
+
 ctrl-l, ctrl-e, ctrl-a, 
 \end{frame}
 
 \begin{frame}
 \frametitle{Useful one-liners}
-\centering
+
 cat /etc/issue
 \end{frame}
 
